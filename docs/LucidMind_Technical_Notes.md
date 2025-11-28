@@ -105,7 +105,11 @@ Feeds collapse into growth.
 
 ⸻
 
-8. Void Interaction Cycle Zero Void → Motivational Void → Creative Void → Instability Engine → Zero Void Zero Void → Motivational Void → Creative Void → Instability Engine → Zero Void 9. Scientific Relevance and Research Alignment
+8. Void Interaction Cycle Zero Void → Motivational Void → Creative Void → Instability Engine → Zero Void Zero Void → Motivational Void → Creative Void → Instability Engine → Zero Void
+
+
+
+9. Scientific Relevance and Research Alignment
 
 Lucid Mind is designed as a minimal cognitive architecture that emphasizes internal state dynamics, void-driven motivation, and reflective self-modeling. Its structure aligns naturally with several active research directions in contemporary computational neuroscience and AGI theory:
 
