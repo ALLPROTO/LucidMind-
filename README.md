@@ -51,7 +51,8 @@ All documentation files are located inside the `/docs` directory:
 
 - **Abstract.pdf** — concise scientific overview  
 - **Core_Architecture.pdf** — detailed system structure  
-- **Diagram.png** — (coming soon)  
+- **LucidMind_Diagram.txt** —
+  visual structure  
 
 ---
 
