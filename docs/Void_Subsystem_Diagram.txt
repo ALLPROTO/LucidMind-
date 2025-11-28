@@ -1,0 +1,31 @@
+                           VOID SUBSYSTEM — INTERNAL DYNAMICS
+ ┌─────────────────────────────────────────────────────────────────────────┐
+ │                                                                         │
+ │   Zero Void (V0)                                                        │
+ │   ──────────────────────────────────────────────────────────────        │
+ │   • Baseline emptiness                                                  │
+ │   • Pure state space without memory                                     │
+ │   • The origin point for cognition                                      │
+ │                                                                         │
+ │   Motivational Void (V1)                                                │
+ │   ──────────────────────────────────────────────────────────────        │
+ │   • Creates cognitive tension                                           │
+ │   • Drives state movement                                               │
+ │   • Attempts to fill emptiness                                          │
+ │                                                                         │
+ │   Creative Void (V2)                                                    │
+ │   ──────────────────────────────────────────────────────────────        │
+ │   • Generates novel configurations                                      │
+ │   • Produces alternative states                                         │
+ │   • Expands cognitive search space                                      │
+ │                                                                         │
+ │   Instability Engine (V3)                                               │
+ │   ──────────────────────────────────────────────────────────────        │
+ │   • Collapses unstable states                                           │
+ │   • Feeds back into Zero Void                                           │
+ │   • Enables structural growth                                           │
+ │                                                                         │
+ └─────────────────────────────────────────────────────────────────────────┘
+
+ Interaction Flow:
+ V0 → V1 → V2 → V3 → V0 (closed cognitive evolution cycle)
