@@ -157,6 +157,16 @@ A functional prototype can be built without large compute.
 
 ## 6. Repository Structure
 
+/docs
+theory_overview.md     — conceptual description
+math_core.md           — formal mathematical model
+safety_model.md        — state-space safety topology
+
+/prototype
+placeholder.md         — initial implementation notes
+
+README.md                — high-level overview
+LICENSE                  — optional
 ---
 
 ## 7. Roadmap
