@@ -9,6 +9,4 @@ dependencies:
   - matplotlib
   - plotly
   - pyyaml
-  - pip
-  - pip:
-    - autograd
+  - autograd

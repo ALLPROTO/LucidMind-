@@ -21,6 +21,8 @@ class Rule:
         """
         Calculates the probability of applying this rule given current state S.
         
+        See: docs/math_core.md#41-soft-gating
+        
         Args:
             S: Current state vector
             k: Sigmoid steepness (gate_k)
@@ -33,12 +35,18 @@ class Rule:
         return float(1.0 / (1.0 + np.exp(-k * g)))
 
     def apply(self, S: np.ndarray) -> np.ndarray:
-        """Applies the rule's delta to state S."""
+        """
+        Applies the rule's delta to state S.
+        
+        See: docs/math_core.md#42-state-transformation
+        """
         return S + self.delta
 
 def choose_weighted(rules: List[Rule], T: float = 0.8, rng: Optional[np.random.Generator] = None) -> Rule:
     """
     Selects a rule based on their strengths using softmax with temperature T.
+    
+    See: docs/math_core.md#43-stochastic-selection
     
     Args:
         rules: List of candidate rules

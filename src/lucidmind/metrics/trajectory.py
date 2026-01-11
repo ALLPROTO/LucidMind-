@@ -5,6 +5,8 @@ def compute_pairwise_distances(trajectories: List[np.ndarray]) -> np.ndarray:
     """
     Computes L2 distance between all pairs of trajectories at each timestep.
     
+    See: docs/math_core.md#72-trajectory-diversity
+    
     Args:
         trajectories: List of (T, N) arrays
         

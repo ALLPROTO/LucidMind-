@@ -5,6 +5,8 @@ from .entropy import detect_entropy_lock
 def detect_unbounded_growth(complexity_history: np.ndarray, min_window: int = 50) -> bool:
     """
     Detects exponential growth in complexity (Condition E1).
+    
+    See: docs/math_core.md#531-condition-e1-unbounded-growth
     """
     if len(complexity_history) < min_window:
         return False
@@ -24,6 +26,8 @@ def detect_unbounded_growth(complexity_history: np.ndarray, min_window: int = 50
 def detect_rule_saturation(damping_ratio: float, born_total: int, min_born: int = 10) -> bool:
     """
     Detects if rules are being born but not dying (Condition E3).
+    
+    See: docs/math_core.md#533-condition-e3-rule-saturation
     """
     if born_total < min_born:
         return False
@@ -39,6 +43,8 @@ def detect_irreversible_sensitivity(
 ) -> bool:
     """
     Detects irreversible sensitivity to small perturbations (Condition E4).
+    
+    See: docs/math_core.md#534-condition-e4-irreversible-sensitivity
     """
     if len(baseline_traj) != len(perturbed_traj):
         return False

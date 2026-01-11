@@ -1,9 +1,12 @@
 import numpy as np
 from typing import Optional
+from lucidmind.core.state import entropy
 
 def compute_entropy(S: np.ndarray) -> float:
     """
     Computes the normalized entropy of the state vector distribution.
+    
+    See: docs/math_core.md#52-entropy-and-distribution
     
     Args:
         S: State vector
@@ -11,8 +14,7 @@ def compute_entropy(S: np.ndarray) -> float:
     Returns:
         Entropy value (scalar)
     """
-    p = np.abs(S) / (np.sum(np.abs(S)) + 1e-9)
-    return -float(np.sum(p * np.log(p + 1e-9)))
+    return entropy(S)
 
 def compute_entropy_drift(entropy_t: float, entropy_prev: float) -> float:
     """

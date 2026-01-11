@@ -5,6 +5,8 @@ def compute_damping_ratio(killed_total: int, born_total: int) -> float:
     """
     Computes the damping ratio (killed/born).
     
+    See: docs/math_core.md#6-lifecycle-and-damping
+    
     Args:
         killed_total: Total number of rules killed
         born_total: Total number of rules born
