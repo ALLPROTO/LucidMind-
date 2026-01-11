@@ -3,13 +3,50 @@
 ## Purpose
 LucidMind is a non-statistical artificial intelligence framework based on deterministic state evolution within a structured state space. Unlike modern neural networks, it does not rely on training, datasets, or optimization. Instead, it generates reasoning through the geometric properties of a task-induced functional. The project aims to provide a mathematically interpretable and inherently safe alternative to statistical AI.
 
+## Current Phase: Core Dynamics Research
+
+The project is currently in the **Core Dynamics Research Phase**. The goal is to understand and stabilize the self-organizing kernel dynamics before adding any semantic/text processing.
+
+**Key principle**: If the kernel is unstable on its own, no amount of input processing will fix it. First physics, then semantics.
+
+### Phase Objectives
+1. Characterize stability windows (where complexity plateaus, not explodes)
+2. Understand rule lifecycle (birth/death principles, damping ratio)
+3. Measure trajectory diversity and recovery from perturbations
+4. Find the "zone of life" in parameter space
+
+### Phase Constraints
+- **Kernel is frozen**: The core dynamics logic must not change during research
+- **No semantic input**: No text, embeddings, or meaning processing until kernel is stable
+- **Metrics only**: Only add logging, metrics, and visualization to the kernel
+
 ## Tech Stack
 - **Language:** Python 3.10+ (preferred for numerical modeling and simulation).
+- **Environment:** Conda (MANDATORY - see Environment Setup section).
 - **Core Libraries:**
   - `NumPy`/`SciPy`: High-performance numerical computation and matrix operations.
   - `Autograd` or `JAX`: For automatic differentiation of task functionals $h(x)$.
   - `Matplotlib`/`Plotly`: For visualizing state trajectories and topological manifolds.
+  - `PyYAML`: For configuration management.
 - **Documentation:** Markdown with KaTeX/MathJax for formal mathematical notation.
+
+## Environment Setup
+
+**All development MUST use the conda environment.**
+
+```bash
+# Create environment
+conda env create -f environment.yml
+
+# Activate environment
+conda activate lucidmind
+
+# Verify
+python --version  # Should be 3.10+
+python -c "import numpy; print(numpy.__version__)"
+```
+
+Direct `pip install` outside conda is prohibited for core dependencies.
 
 ## Project Conventions
 
