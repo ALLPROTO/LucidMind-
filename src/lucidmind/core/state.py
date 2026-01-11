@@ -14,6 +14,8 @@ def entropy(S: np.ndarray) -> float:
     """
     Calculates the normalized entropy of the state vector distribution.
     
+    See: docs/math_core.md#52-entropy-and-distribution
+    
     Args:
         S: State vector
         

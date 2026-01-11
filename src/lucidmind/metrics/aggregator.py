@@ -5,6 +5,8 @@ def aggregate_metrics(all_run_metrics: List[Dict[str, np.ndarray]]) -> Dict[str,
     """
     Aggregates metrics across multiple runs (mean, std, percentiles).
     
+    See: docs/math_core.md#71-statistical-aggregation
+    
     Args:
         all_run_metrics: List of dicts, where each dict has metric names as keys 
                          and 1D arrays of values over time as values.

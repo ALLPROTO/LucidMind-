@@ -1,8 +1,11 @@
 import numpy as np
+from lucidmind.core.state import complexity
 
 def compute_complexity(S: np.ndarray, tau: float = 0.2) -> int:
     """
     Computes the complexity of state S based on a threshold tau.
+    
+    See: docs/math_core.md#51-high-gradient-manifold-hgm
     
     Args:
         S: State vector
@@ -11,7 +14,7 @@ def compute_complexity(S: np.ndarray, tau: float = 0.2) -> int:
     Returns:
         Number of active components
     """
-    return int(np.sum(np.abs(S) > tau))
+    return complexity(S, tau)
 
 def is_within_bounds(complexity: int, c_min: int, c_max: int) -> bool:
     """Checks if complexity is within specified stable bounds."""

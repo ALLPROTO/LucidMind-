@@ -2,6 +2,7 @@ import numpy as np
 from typing import List, Dict, Any, Optional
 from .rule import Rule, choose_weighted
 from .state import complexity, entropy
+from ..metrics.rules import compute_damping_ratio
 
 class Kernel:
     """
@@ -111,7 +112,7 @@ class Kernel:
             self.S = S_new
             self.memory.append(self.S.copy())
 
-        # 9) Rule birth
+        # 8) Rule birth
         if len(self.memory) >= self.birth_window:
             recent = self.memory[-self.birth_window:]
             recent_comp = [complexity(x, self.tau) for x in recent]
@@ -143,10 +144,14 @@ class Kernel:
         }
 
     def get_stats(self) -> Dict[str, Any]:
-        """Returns statistics of the kernel."""
+        """
+        Returns statistics of the kernel.
+        
+        See: docs/math_core.md#6-lifecycle-and-damping
+        """
         born = self.born_total
         died = self.died_total
-        damping = died / born if born > 0 else 0.0
+        damping = compute_damping_ratio(died, born)
         
         return {
             'born_total': born,
