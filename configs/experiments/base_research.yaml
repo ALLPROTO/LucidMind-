@@ -1,0 +1,7 @@
+# Default research experiment parameters
+N: 32
+T: 3000
+alpha: 0.05
+beta: 0.03
+noise_sigma: 0.03
+tau: 0.2

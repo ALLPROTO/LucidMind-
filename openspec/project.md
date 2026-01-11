@@ -32,7 +32,7 @@ The project is currently in the **Core Dynamics Research Phase**. The goal is to
 
 ## Environment Setup
 
-**All development MUST use the conda environment.**
+**All development MUST use the conda environment. Use of plain python environments or `.venv` is strictly prohibited.**
 
 ```bash
 # Create environment
